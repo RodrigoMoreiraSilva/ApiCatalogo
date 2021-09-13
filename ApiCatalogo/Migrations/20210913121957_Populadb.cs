@@ -4,7 +4,7 @@ namespace ApiCatalogo.Migrations
 {
     public partial class Populadb : Migration
     {
-        protected override void Up(MigrationBuilder mb) //mb = migrationBuilder
+        protected override void Up(MigrationBuilder mb)
         {
             //Insere categorias
             mb.Sql("INSERT INTO Categorias(Nome,Imagemurl) VALUES('Bebidas','http://www.macoratti.net/Imagens/1.jpg')");
@@ -23,7 +23,7 @@ namespace ApiCatalogo.Migrations
 
         }
 
-        protected override void Down(MigrationBuilder mb) //mb = migrationBuilder
+        protected override void Down(MigrationBuilder mb)
         {
             mb.Sql("DELETE FROM Categorias");
             mb.Sql("DELETE FROM Produtos");
